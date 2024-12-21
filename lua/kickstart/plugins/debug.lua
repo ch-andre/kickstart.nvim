@@ -34,32 +34,32 @@ return {
       desc = 'Debug: Start/Continue',
     },
     {
-      '<F1>',
+      '<F9>',
       function()
-        require('dap').step_into()
+        require('dap').toggle_breakpoint()
       end,
-      desc = 'Debug: Step Into',
+      desc = 'Debug: Toggle Breakpoint',
     },
     {
-      '<F2>',
+      '<F10>',
       function()
         require('dap').step_over()
       end,
       desc = 'Debug: Step Over',
     },
     {
-      '<F3>',
+      '<F11>',
+      function()
+        require('dap').step_into()
+      end,
+      desc = 'Debug: Step Into',
+    },
+    {
+      '<F12>',
       function()
         require('dap').step_out()
       end,
       desc = 'Debug: Step Out',
-    },
-    {
-      '<leader>b',
-      function()
-        require('dap').toggle_breakpoint()
-      end,
-      desc = 'Debug: Toggle Breakpoint',
     },
     {
       '<leader>B',
@@ -94,6 +94,8 @@ return {
       -- online, please don't ask me how to install them :)
       ensure_installed = {
         -- Update this to ensure that you have the debuggers for the langs you want
+        'python',
+        'codelldb', -- can also use cppdbg
         'delve',
       },
     }
