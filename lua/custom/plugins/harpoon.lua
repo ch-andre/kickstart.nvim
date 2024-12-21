@@ -4,7 +4,6 @@ return {
   'ThePrimeagen/harpoon',
   branch = 'harpoon2',
   dependencies = { 'nvim-lua/plenary.nvim' },
-
   config = function()
     local harpoon = require 'harpoon'
 
@@ -22,7 +21,7 @@ return {
 
     vim.keymap.set('n', '<leader>hh', function()
       harpoon.ui:toggle_quick_menu(harpoon:list(), toggle_opts)
-    end, { desc = '[H]arpoon toggle quick menu' })
+    end, { desc = '[H]arpoon toggle quick menu', silent = true })
 
     local hkeys = {
       q = { 1, '1st' },

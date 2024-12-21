@@ -7,5 +7,6 @@ return {
   keys = {
     { '-', ':Oil<CR>', desc = 'Open parent directory', silent = true },
   },
-  dependencies = { { 'echasnovski/mini.icons', opts = {} } },
+  -- dependencies = { { 'echasnovski/mini.icons', opts = {} } },
+  dependencies = { 'nvim-tree/nvim-web-devicons' },
 }
