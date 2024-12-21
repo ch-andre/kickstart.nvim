@@ -171,6 +171,11 @@ return {
         },
         -- root_dir -> use gF to visit
       },
+
+      bashls = {},
+
+      jsonls = {},
+
       -- gopls = {},
       -- pyright = {},
       -- rust_analyzer = {},

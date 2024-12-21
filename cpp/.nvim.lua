@@ -1,6 +1,8 @@
--- /path/to/dir/.nvim.lua
+--
+vim.cmd.compiler { args = { 'clang++' }, bang = true }
 
-vim.cmd.compiler { args = { 'cargo' }, bang = true }
+-- TODO default templates (cargo, ...)
+-- And set keymap from the init.lua ? or enable the template
 
 require('overseer').register_template {
   name = 'Build project',
@@ -28,14 +30,12 @@ require('overseer').register_template {
 
   builder = function()
     return {
-      cmd = { 'cargo' },
+      cmd = { 'make' },
       args = { 'build' },
       components = {
         { 'on_output_quickfix', errorformat = vim.o.errorformat, set_diagnostics = true, items_only = true },
-        -- { 'on_output_quickfix', errorformat = vim.o.errorformat, set_diagnostics = true },
         { 'on_result_diagnostics_quickfix', open = true },
-        -- 'on_result_diagnostics_trouble',
-        -- 'on_result_diagnostics_trouble',
+        'on_result_diagnostics_trouble',
         'default',
       },
     }

@@ -5,5 +5,11 @@ fn foo() -> i32 {
 fn main() {
     println!("Hello, world!");
 
+    {
+        let x = 4;
+    }
+
+    return x;
+
     0
 }
