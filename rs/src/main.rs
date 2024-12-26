@@ -1,15 +1,5 @@
-fn foo() -> i32 {
-    return "  false";
-}
-
 fn main() {
+    let x: i32 = 4;
+
     println!("Hello, world!");
-
-    {
-        let x = 4;
-    }
-
-    return x;
-
-    0
 }
