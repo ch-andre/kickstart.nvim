@@ -1,5 +1,15 @@
-fn main() {
-    let x: i32 = 4;
+fn foo(s: &str) -> &str {
+    println!("Hello: {s}");
 
-    println!("Hello, world!");
+    let x = Some(4);
+
+    if let Some(y) = x {
+        println!("Hello: {y}");
+    }
+
+    s
+}
+
+fn main() {
+    foo("World");
 }
