@@ -18,12 +18,26 @@ mini_clue.setup {
     { mode = 'x', keys = "'" },
     { mode = 'x', keys = '`' },
 
+    -- Registers
+    { mode = 'n', keys = '"' },
+    { mode = 'x', keys = '"' },
+    { mode = 'i', keys = '<C-r>' },
+    { mode = 'c', keys = '<C-r>' },
+
+    -- Bracketed
+    { mode = 'n', keys = '[' },
+    { mode = 'n', keys = ']' },
+
     -- Window commands
     { mode = 'n', keys = '<C-w>' },
 
     -- `z` key
     { mode = 'n', keys = 'z' },
     { mode = 'x', keys = 'z' },
+
+    -- Bracketed
+    { mode = 'n', keys = '[' },
+    { mode = 'n', keys = ']' },
   },
   clues = {
     -- Enhance this by adding descriptions for <Leader> mapping groups
