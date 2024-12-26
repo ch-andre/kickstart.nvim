@@ -1,0 +1,7 @@
+[*.lua]
+indent_width = 2
+indent_style = space
+
+[*.sh]
+indent_width = 2
+indent_style = tab

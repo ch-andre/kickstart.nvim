@@ -43,6 +43,7 @@ return {
         lua = { 'stylua' },
         rust = { 'rustfmt', lsp_format = 'fallback' },
         json = { 'jq' },
+        bash = { 'shfmt' },
         cpp = { 'clang-format' },
         c = { 'clang-format ' },
         nix = { 'injected', 'nixfmt' },

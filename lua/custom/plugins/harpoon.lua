@@ -9,7 +9,7 @@ return {
 
     harpoon:setup()
 
-    vim.keymap.set('n', '<leader>ha', function()
+    vim.keymap.set('n', '<leader>Ha', function()
       harpoon:list():add()
     end, { desc = '[H]arpoon [A]dd file', silent = true })
 
@@ -19,7 +19,7 @@ return {
       ui_width_ratio = 0.40,
     }
 
-    vim.keymap.set('n', '<leader>hh', function()
+    vim.keymap.set('n', '<leader>HH', function()
       harpoon.ui:toggle_quick_menu(harpoon:list(), toggle_opts)
     end, { desc = '[H]arpoon toggle quick menu', silent = true })
 
@@ -32,7 +32,7 @@ return {
     }
 
     for key, mapping in pairs(hkeys) do
-      vim.keymap.set('n', '<leader>h' .. key, function()
+      vim.keymap.set('n', '<leader>H' .. key, function()
         harpoon:list():select(mapping[1])
       end, { desc = '[H]arpoon open ' .. mapping[2] .. ' file', silent = true })
     end

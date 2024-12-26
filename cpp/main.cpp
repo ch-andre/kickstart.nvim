@@ -1,3 +1,4 @@
 
 
-int main() { x = 4; }
+#include <cstdint>
+int main() { int32_t x = 4; }

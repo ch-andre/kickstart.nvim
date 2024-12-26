@@ -1,8 +1,6 @@
 
-
 NVIM_APPNAME := 'kickstart-nvim'
 DIR := justfile_directory()
-
 
 [private]
 default:

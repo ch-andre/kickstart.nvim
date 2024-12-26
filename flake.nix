@@ -20,6 +20,10 @@
           buildInputs = with pkgs; [
             neovim
             stylua
+
+            bash-language-server
+            shfmt
+            shellcheck
           ];
         };
       }
