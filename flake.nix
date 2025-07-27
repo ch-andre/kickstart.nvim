@@ -24,6 +24,8 @@
             bash-language-server
             shfmt
             shellcheck
+
+            fennel
           ];
         };
       }
